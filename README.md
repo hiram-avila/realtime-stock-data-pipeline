@@ -1,8 +1,19 @@
-# Real-Time Stock Prediction Engine  
-## Forecasting Apple (AAPL) Prices with Kafka and Deep Learning  
-*A scalable data pipeline processing 1M+ messages/day, leveraging streaming data and LSTM networks to predict stock movements.*  
+# Real-Time ML Streaming Demo
 
-**Key Technologies:**  
-- Apache Kafka | Python | TensorFlow  
-- TimescaleDB | Streamlit | AWS EC2  
-- Feature Engineering | Time Series Analysis  
+**Demo project** showcasing:
+
+- ✅ Real-time stream processing with Kafka, Faust & Spark
+- ✅ Machine Learning model training & inference (TensorFlow)
+- ✅ Cloud-ready, scalable architecture patterns
+- ✅ Interactive data visualization with Streamlit & Plotly
+
+## Estructura
+- **producer/**: Genera datos de ejemplo desde yfinance a Kafka
+- **consumer/**: Procesa streams con Spark Streaming y Faust
+- **ml/**: Código de entrenamiento y serialización de modelos
+- **streamlit_app/**: Dashboard en Streamlit para visualización en tiempo real
+- **infra/terraform**: Infraestructura como código para desplegar en AWS
+
+## Requisitos
+```bash
+pip install -r requirements.txt
